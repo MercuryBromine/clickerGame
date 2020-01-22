@@ -14,7 +14,6 @@ class application:
 		### Main Configuration ###
 		self.master = master
 		self.master.title("Clicker Window")
-		self.master.resizable(False,False)
 		bg_colour = "#000000" # black bg 
 		fg_colour = "#ff6404" #orange fg
 		btn_bg_colour = "#ffffff" #white btn 
