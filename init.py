@@ -29,10 +29,10 @@ class application:
 		### Contents ### 
 
 		counter = IntVar()
-		self.counter = Label(self.counter_frame, textvariable=counter, bg=bg_colour, fg=fg_colour, font=("Open Sans", 20))
+		self.counter = Label(self.counter_frame, textvariable=counter, bg=bg_colour, fg=fg_colour, font=("Open Sans", 90))
 		self.counter.grid(row=0,column=0)
 
-		self.btn = Button(self.btn_frame, text="Click me", font=("Open Sans", 12), bg=btn_bg_colour, fg=btn_fg_colour, command=lambda: counter.set(counter.get() + 1))
+		self.btn = Button(self.btn_frame, text="Click me", font=("Open Sans", 50), bg=btn_bg_colour, fg=btn_fg_colour, command=lambda: counter.set(counter.get() + 1))
 		self.btn.grid(row=0,column=0)
 
 		
