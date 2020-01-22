@@ -15,10 +15,10 @@ class application:
 		self.master = master
 		self.master.title("Clicker Window")
 		self.master.resizable(False,False)
-		bg_colour = "#03ffe6" # blue bg 
-		fg_colour = "#ff3e03" #red fg
-		btn_bg_colour = "#d91200" #red btn 
-		btn_fg_colour = "#00ff55" #blue fg
+		bg_colour = "#000000" # black bg 
+		fg_colour = "#ff6404" #orange fg
+		btn_bg_colour = "#ffffff" #white btn 
+		btn_fg_colour = "#000000" #black fg
 		self.master.config(bg=bg_colour)
 
 		### Frames ###
@@ -33,7 +33,7 @@ class application:
 		self.counter = Label(self.counter_frame, textvariable=counter, bg=bg_colour, fg=fg_colour, font=("Open Sans", 20))
 		self.counter.grid(row=0,column=0)
 
-		self.btn = Button(self.btn_frame, text="Click me", font=("Open Sans", 12), bg=btn_bg_colour, fg=btn_fg_colour)
+		self.btn = Button(self.btn_frame, text="Click me", font=("Open Sans", 12), bg=btn_bg_colour, fg=btn_fg_colour, command=lambda: counter.set(counter.get() + 1))
 		self.btn.grid(row=0,column=0)
 
 		
